@@ -33,21 +33,21 @@
             <article class="card" style="max-width: 500px; margin: 0 auto;">
                 <h2 class="card-title">Envoyez-moi un message</h2>
                 
-                <form id="contactForm">
-                    <div class="form-group">
-                        <label for="nom">Nom *</label>
-                        <input type="text" id="nom" name="nom" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email *</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message *</label>
-                        <textarea id="message" name="message" rows="4" required></textarea>
-                    </div>
-                    <button type="button" class="btn btn-primary" onclick="envoyerEmail()">Envoyer</button>
-                </form>
+               <form
+  action="https://formspree.io/f/maqqjery"
+  method="POST"
+>
+  <label>
+    Your email:
+    <input type="email" name="email">
+  </label>
+  <label>
+    Your message:
+    <textarea name="message"></textarea>
+  </label>
+  <!-- your other form fields go here -->
+  <button type="submit">Send</button>
+</form>
                 
                 <p style="margin-top: 20px; text-align: center;">
                     <strong>Email:</strong> <a href="mailto:soulaymaktata9@gmail.com">soulaymaktata9@gmail.com</a>
@@ -93,3 +93,4 @@
     </script>
 </body>
 </html>
+
