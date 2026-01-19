@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact - Mon Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <a href="index.html" class="logo">Mon<span>Portfolio</span></a>
+            <button class="menu-toggle" onclick="toggleMenu()">&#9776;</button>
+            <nav>
+                <ul id="navLinks">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="parcours.html">Parcours</a></li>
+                    <li><a href="competences.html">Compétences</a></li>
+                    <li><a href="stages.html">Stages</a></li>
+                    <li><a href="vie associative.html">Vie associative</a></li>
+                    <li><a href="passions.html">Passions</a></li>
+                    <li><a href="quizz.html">Quizz</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                    <li><a href="temoignage.html">Témoignage</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="section">
+            <h1 class="section-title">Me Contacter</h1>
+            
+            <article class="card" style="max-width: 500px; margin: 0 auto;">
+                <h2 class="card-title">Envoyez-moi un message</h2>
+                
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="nom">Nom *</label>
+                        <input type="text" id="nom" name="nom" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+                    </div>
+                    <button type="button" class="btn btn-primary" onclick="envoyerEmail()">Envoyer</button>
+                </form>
+                
+                <p style="margin-top: 20px; text-align: center;">
+                    <strong>Email:</strong> <a href="mailto:soulaymaktata9@gmail.com">soulaymaktata9@gmail.com</a>
+                </p>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p class="copyright">© 2026 Mon Portfolio</p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            var nav = document.getElementById('navLinks');
+            if (nav.classList.contains('active')) {
+                nav.classList.remove('active');
+            } else {
+                nav.classList.add('active');
+            }
+        }
+
+        function envoyerEmail() {
+            var nom = document.getElementById('nom').value;
+            var email = document.getElementById('email').value;
+            var message = document.getElementById('message').value;
+
+            if (nom == '' || email == '' || message == '') {
+                alert('Veuillez remplir tous les champs!');
+                return;
+            }
+
+            var sujet = 'Message de ' + nom;
+            var corps = 'Nom: ' + nom + '\nEmail: ' + email + '\n\nMessage:\n' + message;
+            
+            window.location.href = 'mailto:votre.email@example.com?subject=' + encodeURIComponent(sujet) + '&body=' + encodeURIComponent(corps);
+            
+            alert('Votre client email va s\'ouvrir. Le message est pret a etre envoye!');
+            document.getElementById('contactForm').reset();
+        }
+    </script>
+</body>
+</html>

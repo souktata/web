@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Témoignage - Mon Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <a href="index.html" class="logo">Mon<span>Portfolio</span></a>
+            <button class="menu-toggle" onclick="toggleMenu()">&#9776;</button>
+            <nav>
+                <ul id="navLinks">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="parcours.html">Parcours</a></li>
+                    <li><a href="competences.html">Compétences</a></li>
+                    <li><a href="stages.html">Stages</a></li>
+                    <li><a href="vie associative.html">Vie associative</a></li>
+                    <li><a href="passions.html">Passions</a></li>
+                    <li><a href="quizz.html">Quizz</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="temoignage.html" class="active">Témoignage</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="section">
+            <h1 class="section-title">Mon Témoignage sur l'IIT</h1>
+            <p class="mb-lg">Mon expérience à l'Institut International de Technologie.</p>
+
+            <article class="card" style="background-color: #f5ebe0;">
+                <div style="display: flex; gap: 20px; flex-wrap: wrap; align-items: flex-start;">
+                    <figure>
+                        <img src="images/iit.png" alt="Campus IIT" style="width: 150px; height: 150px; border-radius: 10px;">
+                    </figure>
+                    <div style="flex: 1; min-width: 250px;">
+                        <h2 style="color: #b08d8a; margin-bottom: 15px;">Une expérience enrichissante</h2>
+                        <p style="font-style: italic; font-size: 1.1rem; line-height: 1.8;">
+                            "Intégrer l'IIT a été une décision qui a changé ma vie. Dès mon premier jour, 
+                            j'ai été impressionnée par la qualité de l'enseignement et l'environnement 
+                            propice à l'apprentissage. Les professeurs sont passionnés et toujours 
+                            disponibles pour accompagner les étudiants."
+                        </p>
+                    </div>
+                </div>
+            </article>
+
+           
+            <div class="card-grid mt-lg">
+                <article class="card text-center">
+                    <h3>Enseignement de qualité</h3>
+                    <p class="card-description">Professeurs compétents et passionnés.</p>
+                </article>
+
+                <article class="card text-center">
+                    <h3>Infrastructure moderne</h3>
+                    <p class="card-description">Équipements et laboratoires bien équipés.</p>
+                </article>
+
+                <article class="card text-center">
+                    <h3>Ambiance conviviale</h3>
+                    <p class="card-description">Entraide entre étudiants.</p>
+                </article>
+
+                <article class="card text-center">
+                    <h3>Opportunités professionnelles</h3>
+                    <p class="card-description">Stages et partenariats.</p>
+                </article>
+            </div>
+
+
+
+ 
+
+            
+            <article class="card mt-lg" style="background-color: #c9a9a6; color: white;">
+                <h2 style="color: white; margin-bottom: 15px;">Message aux futurs étudiants</h2>
+                <p style="font-size: 1.1rem; line-height: 1.8;">
+                    Si vous êtes passionné(e) par l'informatique et que vous cherchez une formation 
+                    de qualité, l'IIT est un excellent choix. N'hésitez pas à vous lancer!
+                </p>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p class="copyright">© 2026 Mon Portfolio - Tous droits réservés</p>
+                <nav class="footer-links">
+                    <a href="contact.html">Contact</a>
+                    <a href="temoignage.html">Témoignage</a>
+                </nav>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            var nav = document.getElementById('navLinks');
+            if (nav.classList.contains('active')) {
+                nav.classList.remove('active');
+            } else {
+                nav.classList.add('active');
+            }
+        }
+    </script>
+</body>
+</html>

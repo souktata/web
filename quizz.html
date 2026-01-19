@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Quizz - Mon Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <a href="index.html" class="logo">Mon<span>Portfolio</span></a>
+            <button class="menu-toggle" onclick="toggleMenu()">&#9776;</button>
+           <nav Navigation principale>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="parcours.html">Parcours</a></li>
+                    <li><a href="compétences.html">Compétences</a></li>
+                    <li><a href="stages.html">Stages</a></li>
+                    <li><a href="vie associative.html">Vie associative</a></li>
+                    <li><a href="passions.html">Passions</a></li>
+                    <li><a href="quizz.html" class="active">Quizz</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="temoignage.html">Témoignage</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="section">
+            <h1 class="section-title">Quizz Programmation Web</h1>
+            <p class="mb-lg">Testez vos connaissances ! Répondez aux 12 questions.</p>
+
+            <form id="quizForm" class="quiz-container">
+                <div class="quiz-question">
+                    <h3>1. Que signifie HTML ?</h3>
+                    <div class="quiz-options">
+                        <label class="quiz-option"><input type="radio" name="q1" value="a"> Hyper Text Markup Language</label>
+                        <label class="quiz-option"><input type="radio" name="q1" value="b"> High Tech Modern Language</label>
+                        <label class="quiz-option"><input type="radio" name="q1" value="c"> Hyperlink Text Markup Language</label>
+                        <label class="quiz-option"><input type="radio" name="q1" value="d"> Home Tool Markup Language</label>
+                    </div>
+                </div>
+
+                <div class="quiz-question">
+                    <h3>2. Quelle balise HTML crée un lien hypertexte ?</h3>
+                    <div class="quiz-options">
+                        <label class="quiz-option"><input type="radio" name="q2" value="a"> &lt;link&gt;</label>
+                        <label class="quiz-option"><input type="radio" name="q2" value="b"> &lt;a&gt;</label>
+                        <label class="quiz-option"><input type="radio" name="q2" value="c"> &lt;href&gt;</label>
+                        <label class="quiz-option"><input type="radio" name="q2" value="d"> &lt;url&gt;</label>
+                    </div>
+                </div>
+
+                <div class="quiz-question">
+                    <h3>3. Que signifie CSS ?</h3>
+                    <div class="quiz-options">
+                        <label class="quiz-option"><input type="radio" name="q3" value="a"> Computer Style Sheets</label>
+                        <label class="quiz-option"><input type="radio" name="q3" value="b"> Creative Style System</label>
+                        <label class="quiz-option"><input type="radio" name="q3" value="c"> Cascading Style Sheets</label>
+                        <label class="quiz-option"><input type="radio" name="q3" value="d"> Colorful Style Sheets</label>
+                    </div>
+                </div>
+
+                <div class="quiz-question">
+                    <h3>4. Quelle propriété CSS change la couleur du texte ?</h3>
+                    <div class="quiz-options">
+                        <label class="quiz-option"><input type="radio" name="q4" value="a"> text-color</label>
+                        <label class="quiz-option"><input type="radio" name="q4" value="b"> font-color</label>
+                        <label class="quiz-option"><input type="radio" name="q4" value="c"> color</label>
+                        <label class="quiz-option"><input type="radio" name="q4" value="d"> background-color</label>
+                    </div>
+                </div>
+
+                <div class="quiz-question">
+                    <h3>5. Quelle balise HTML5 pour le pied de page ?</h3>
+                    <div class="quiz-options">
+                        <label class="quiz-option"><input type="radio" name="q5" value="a"> &lt;bottom&gt;</label>
+                        <label class="quiz-option"><input type="radio" name="q5" value="b"> &lt;footer&gt;</label>
+                        <label class="quiz-option"><input type="radio" name="q5" value="c"> &lt;section&gt;</label>
+                        <label class="quiz-option"><input type="radio" name="q5" value="d"> &lt;end&gt;</label>
+                    </div>
+                </div>
+
+                
+                <div class="quiz-question">
+                    <h3>6. Comment déclarer une variable en JavaScript ?</h3>
+                    <div class="quiz-options">
+                        <label class="quiz-option"><input type="radio" name="q6" value="a"> variable x = 5;</label>
+                        <label class="quiz-option"><input type="radio" name="q6" value="b"> var x = 5;</label>
+                        <label class="quiz-option"><input type="radio" name="q6" value="c"> int x = 5;</label>
+                        <label class="quiz-option"><input type="radio" name="q6" value="d"> dim x = 5;</label>
+                    </div>
+                </div>
+
+            
+                <div class="quiz-question">
+                    <h3>7. Quel attribut HTML pour le texte alternatif d'une image ?</h3>
+                    <div class="quiz-options">
+                        <label class="quiz-option"><input type="radio" name="q7" value="a"> title</label>
+                        <label class="quiz-option"><input type="radio" name="q7" value="b"> src</label>
+                        <label class="quiz-option"><input type="radio" name="q7" value="c"> alt</label>
+                        <label class="quiz-option"><input type="radio" name="q7" value="d"> description</label>
+                    </div>
+                </div>
+
+               
+                <div class="quiz-question">
+                    <h3>8. Quelle propriété CSS pour l'espace intérieur ?</h3>
+                    <div class="quiz-options">
+                        <label class="quiz-option"><input type="radio" name="q8" value="a"> margin</label>
+                        <label class="quiz-option"><input type="radio" name="q8" value="b"> padding</label>
+                        <label class="quiz-option"><input type="radio" name="q8" value="c"> spacing</label>
+                        <label class="quiz-option"><input type="radio" name="q8" value="d"> border</label>
+                    </div>
+                </div>
+
+                
+                <div class="quiz-question">
+                    <h3>9. Quelle méthode JavaScript sélectionne par ID ?</h3>
+                    <div class="quiz-options">
+                        <label class="quiz-option"><input type="radio" name="q9" value="a"> document.getElement(id)</label>
+                        <label class="quiz-option"><input type="radio" name="q9" value="b"> document.getElementById(id)</label>
+                        <label class="quiz-option"><input type="radio" name="q9" value="c"> document.selectById(id)</label>
+                        <label class="quiz-option"><input type="radio" name="q9" value="d"> document.findById(id)</label>
+                    </div>
+                </div>
+
+               
+                <div class="quiz-question">
+                    <h3>10. Quelle balise pour une liste non ordonnée ?</h3>
+                    <div class="quiz-options">
+                        <label class="quiz-option"><input type="radio" name="q10" value="a"> &lt;ol&gt;</label>
+                        <label class="quiz-option"><input type="radio" name="q10" value="b"> &lt;ul&gt;</label>
+                        <label class="quiz-option"><input type="radio" name="q10" value="c"> &lt;list&gt;</label>
+                        <label class="quiz-option"><input type="radio" name="q10" value="d"> &lt;dl&gt;</label>
+                    </div>
+                </div>
+
+             
+                <div class="quiz-question">
+                    <h3>11. Quelle balise HTML5 pour l'en-tête ?</h3>
+                    <div class="quiz-options">
+                        <label class="quiz-option"><input type="radio" name="q11" value="a"> &lt;top&gt;</label>
+                        <label class="quiz-option"><input type="radio" name="q11" value="b"> &lt;header&gt;</label>
+                        <label class="quiz-option"><input type="radio" name="q11" value="c"> &lt;head&gt;</label>
+                        <label class="quiz-option"><input type="radio" name="q11" value="d"> &lt;nav&gt;</label>
+                    </div>
+                </div>
+
+               
+                <div class="quiz-question">
+                    <h3>12. Quel type d'input pour une adresse email ?</h3>
+                    <div class="quiz-options">
+                        <label class="quiz-option"><input type="radio" name="q12" value="a"> type="text"</label>
+                        <label class="quiz-option"><input type="radio" name="q12" value="b"> type="mail"</label>
+                        <label class="quiz-option"><input type="radio" name="q12" value="c"> type="email"</label>
+                        <label class="quiz-option"><input type="radio" name="q12" value="d"> type="address"</label>
+                    </div>
+                </div>
+
+                <button type="button" class="btn btn-primary" style="width: 100%; margin-top: 20px;" onclick="calculerScore()">Valider mes réponses</button>
+            </form>
+
+          
+            <div id="resultat" class="quiz-result">
+                <h2>Vos Résultats</h2>
+                <p class="quiz-score" id="scoreAffiche">0/12</p>
+                <p id="messageScore"></p>
+                <div id="corrections"></div>
+                <button class="btn btn-secondary mt-lg" onclick="recommencer()">Recommencer</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p class="copyright">© 2026 Mon Portfolio - Tous droits réservés</p>
+                <nav class="footer-links">
+                    <a href="contact.html">Contact</a>
+                    <a href="temoignage.html">Témoignage</a>
+                </nav>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        
+        var bonnesReponses = {
+            q1: 'a', q2: 'b', q3: 'c', q4: 'c', q5: 'b', q6: 'b',
+            q7: 'c', q8: 'b', q9: 'b', q10: 'b', q11: 'b', q12: 'c'
+        };
+
+       
+        var texteReponses = {
+            q1: 'Hyper Text Markup Language',
+            q2: '<a>',
+            q3: 'Cascading Style Sheets',
+            q4: 'color',
+            q5: '<footer>',
+            q6: 'var x = 5;',
+            q7: 'alt',
+            q8: 'padding',
+            q9: 'document.getElementById(id)',
+            q10: '<ul>',
+            q11: '<header>',
+            q12: 'type="email"'
+        };
+
+        function toggleMenu() {
+            var nav = document.getElementById('navLinks');
+            if (nav.classList.contains('active')) {
+                nav.classList.remove('active');
+            } else {
+                nav.classList.add('active');
+            }
+        }
+
+        function calculerScore() {
+            var score = 0;
+            var totalQuestions = 12;
+            var corrections = '';
+
+            for (var i = 1; i <= totalQuestions; i++) {
+                var nomQuestion = 'q' + i;
+                var reponseSelectionnee = document.querySelector('input[name="' + nomQuestion + '"]:checked');
+                
+                if (reponseSelectionnee && reponseSelectionnee.value == bonnesReponses[nomQuestion]) {
+                    score = score + 1;
+                    corrections = corrections + '<div class="answer-item" style="border-left-color: green;">Question ' + i + ': ' + texteReponses[nomQuestion] + ' - Correct!</div>';
+                } else {
+                    corrections = corrections + '<div class="answer-item" style="border-left-color: red;">Question ' + i + ': ' + texteReponses[nomQuestion] + '</div>';
+                }
+            }
+
+            document.getElementById('scoreAffiche').innerHTML = score + '/' + totalQuestions;
+            
+            var message = '';
+            if (score == totalQuestions) {
+                message = 'Excellent! Score parfait!';
+            } else if (score >= 10) {
+                message = 'Très bien! Bravo!';
+            } else if (score >= 7) {
+                message = 'Bien! Continuez!';
+            } else if (score >= 4) {
+                message = 'Peut mieux faire!';
+            } else {
+                message = 'Révisez vos cours!';
+            }
+            document.getElementById('messageScore').innerHTML = message;
+            document.getElementById('corrections').innerHTML = '<h3>Corrections:</h3>' + corrections;
+            
+            document.getElementById('resultat').classList.add('show');
+            document.getElementById('quizForm').style.display = 'none';
+        }
+
+        function recommencer() {
+            document.getElementById('quizForm').reset();
+            document.getElementById('quizForm').style.display = 'block';
+            document.getElementById('resultat').classList.remove('show');
+        }
+    </script>
+</body>
+</html>

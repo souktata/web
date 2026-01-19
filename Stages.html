@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Stages - Mon Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <a href="index.html" class="logo">Mon<span>Portfolio</span></a>
+            <button class="menu-toggle" onclick="toggleMenu()">&#9776;</button>
+            <nav Navigation principale>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="parcours.html">Parcours</a></li>
+                    <li><a href="compétences.html">Compétences</a></li>
+                    <li><a href="stages.html"class="active">Stages</a></li>
+                    <li><a href="vie associative.html">Vie associative</a></li>
+                    <li><a href="passions.html">Passions</a></li>
+                    <li><a href="quizz.html">Quizz</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="temoignage.html">Témoignage</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="section">
+            <h1 class="section-title">Stages et Expériences</h1>
+            <p class="mb-lg">Mes expériences professionnelles et projets personnels.</p>
+
+            <div class="timeline">
+                <article class="timeline-item">
+                    <p class="timeline-date">Juillet - Août 2024</p>
+                    <h2 class="timeline-title">Stage d'observation</h2>
+                    <p class="timeline-location">Pharmacare - sfax</p>
+                    <div class="card mt-lg">
+                        <p><strong>Durée:</strong> 1 mois</p>
+                        <p><strong>Objectif:</strong> Découverte du monde professionnel</p>
+                        <h3>Missions réalisées:</h3>
+                        <ul style="margin-left: 20px; color: #6b6b6b;">
+                            <li>Observation du travail en équipe</li>
+                            <li>Découvrir tous les processus du travail</li>
+                            <li>Assistance sur des tâches simples</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="timeline-item">
+                    <p class="timeline-date">février-mai</p>
+                    <h2 class="timeline-title">Stage fin d'etude</h2>
+                    <p class="timeline-location">Startup Marqenti - Sfax</p>
+                    <div class="card mt-lg">
+                        <p><strong>Durée:</strong> 3 mois</p>
+                        <p><strong>Objectif:</strong> Première expérience professionnelle</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">Projets Personnels</h2>
+            <div class="card-grid">
+                <article class="card">
+                    
+                    <h3 class="card-title">Site Web Portfolio</h3>
+                    <p class="card-subtitle">Projet personnel - 2026</p>
+                    <p class="card-description">Création de ce site web en HTML, CSS et JavaScript.</p>
+                    <div class="skills-container mt-lg">
+                        <span class="skill-tag">HTML</span>
+                        <span class="skill-tag">CSS</span>
+                        <span class="skill-tag">JavaScript</span>
+                    </div>
+                </article>
+                
+                <article class="card">
+                   
+                    <h3 class="card-title">Application Mobile "Track Din"</h3>
+                    <p class="card-subtitle">Projet académique - 2025</p>
+                    <p class="card-description">Petite application mobile pour controler mes argent surtout pour les étudiants   .</p>
+                    <div class="skills-container mt-lg">
+                        <span class="skill-tag">vs code </span>
+                        <span class="skill-tag">Docker </span>
+
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p class="copyright">© 2026 Mon Portfolio - Tous droits réservés</p>
+                <nav class="footer-links">
+                    <a href="contact.html">Contact</a>
+                    <a href="temoignage.html">Témoignage</a>
+                </nav>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            var nav = document.getElementById('navLinks');
+            if (nav.classList.contains('active')) {
+                nav.classList.remove('active');
+            } else {
+                nav.classList.add('active');
+            }
+        }
+    </script>
+</body>
+</html>

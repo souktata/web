@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Compétences - Mon Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <a href="index.html" class="logo">Mon<span>Portfolio</span></a>
+            <button class="menu-toggle" onclick="toggleMenu()">&#9776;</button>
+            <nav Navigation principale>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="index.html" >Accueil</a></li>
+                    <li><a href="parcours.html">Parcours</a></li>
+                    <li><a href="compétences.html" class="active">Compétences</a></li>
+                    <li><a href="stages.html">Stages</a></li>
+                    <li><a href="vie associative.html">Vie associative</a></li>
+                    <li><a href="passions.html">Passions</a></li>
+                    <li><a href="quizz.html">Quizz</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="temoignage.html">Témoignage</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="section">
+            <h1 class="section-title">Mes Compétences Informatiques</h1>
+            <p class="mb-lg">Voici mes compétences techniques acquises durant ma formation.</p>
+
+            <div class="card-grid">
+                <article class="card">
+                    <h2 class="card-title">Langages de Programmation</h2>
+                    <div class="skill-bar-container">
+                        <div class="skill-bar-label"><span>HTML/CSS</span><span>70%</span></div>
+                        <div class="skill-bar"><div class="skill-bar-fill" style="width: 70%;"></div></div>
+                    </div>
+                    <div class="skill-bar-container">
+                        <div class="skill-bar-label"><span>JavaScript</span><span>55%</span></div>
+                        <div class="skill-bar"><div class="skill-bar-fill" style="width: 55%;"></div></div>
+                    </div>
+                    <div class="skill-bar-container">
+                        <div class="skill-bar-label"><span>Python</span><span>50%</span></div>
+                        <div class="skill-bar"><div class="skill-bar-fill" style="width: 50%;"></div></div>
+                    </div>
+                    
+                    <div class="skill-bar-container">
+                        <div class="skill-bar-label"><span>C</span><span>55%</span></div>
+                        <div class="skill-bar"><div class="skill-bar-fill" style="width: 55%;"></div></div>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <h2 class="card-title">Bases de Données</h2>
+                    <div class="skill-bar-container">
+                        <div class="skill-bar-label"><span>MySQL</span><span>70%</span></div>
+                        <div class="skill-bar"><div class="skill-bar-fill" style="width: 70%;"></div></div>
+                    </div>
+                    <div class="skill-bar-container">
+                        <div class="skill-bar-label"><span>SQL</span><span>60%</span></div>
+                        <div class="skill-bar"><div class="skill-bar-fill" style="width: 60%;"></div></div>
+                    </div>
+                    
+                </article>
+
+                <article class="card">
+                    <h2 class="card-title">Environnements de Développement</h2>
+                    <div class="skills-container">
+                        <span class="skill-tag">VS Code</span>
+                        <span class="skill-tag">Android Studio</span>
+                        <span class="skill-tag">Laragon</span>
+                        <span class="skill-tag">XAMPP</span>
+                    </div>
+                </article>
+
+
+        <section class="section">
+            <h2 class="section-title">Compétences</h2>
+            <div class="card-grid">
+                <article class="card text-center">
+                    <h3>Communication</h3>
+                    <p class="card-description" >Capacité à communiquer efficacement en équipe</p>
+                </article>
+                
+                <article class="card text-center">
+                    <h3>Créativité</h3>
+                    <p class="card-description">Esprit créatif pour résoudre les problèmes</p>
+                </article>
+                <article class="card text-center">
+                    <h3>Travail d'équipe</h3>
+                    <p class="card-description">l'esprit de Travail en equipes</p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p class="copyright">© 2026 Mon Portfolio - Tous droits réservés</p>
+                <nav class="footer-links">
+                    <a href="contact.html">Contact</a>
+                    <a href="temoignage.html">Témoignage</a>
+                </nav>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            var nav = document.getElementById('navLinks');
+            if (nav.classList.contains('active')) {
+                nav.classList.remove('active');
+            } else {
+                nav.classList.add('active');
+            }
+        }
+    </script>
+</body>
+</html>
